@@ -8,12 +8,16 @@ import { Project } from 'src/app/models/project.model';
 })
 export class ProjectComponent implements OnInit {
 
-  @Input()
-  project: Project | undefined;
+  @Input("project")
+  project!: Project;
   
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  openDialog(){
+    alert('Open dialog to be implemented')
   }
 
 }

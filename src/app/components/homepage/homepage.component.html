@@ -1,0 +1,6 @@
+<app-header-toolbar (scrollTo)="scrollTo($event)"></app-header-toolbar>
+<div class="content">
+    <app-about id="about"></app-about>
+    <app-projects id="groupProjects" [title]="'Group Projects'" [projects]="groupProjects"></app-projects>
+    <app-projects id="personalProjects" [title]="'Personal Projects'" [projects]="personalProjects"></app-projects>
+</div>

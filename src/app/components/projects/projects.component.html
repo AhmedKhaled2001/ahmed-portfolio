@@ -1,0 +1,6 @@
+<h1>{{ title }}</h1>
+<div class="card-container">
+  <ng-container *ngFor="let project of projects">
+    <app-project [project]="project"></app-project>
+  </ng-container>
+</div>
